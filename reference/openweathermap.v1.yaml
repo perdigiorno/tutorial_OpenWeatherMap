@@ -43,7 +43,8 @@ paths:
   /weather:
     get:
       summary: GET Weather
-      tags: []
+      tags:
+        - Weather Endpoints
       responses:
         '200':
           description: OK
@@ -309,3 +310,5 @@ paths:
           in: query
           name: mode
           description: '**Mode*. *Example: html. Determines the format of the response. Possible values are `json`, `xml`, and `html`. If the mode parameter is empty, the format is `json` by default.'
+tags:
+  - name: Weather Endpoints
